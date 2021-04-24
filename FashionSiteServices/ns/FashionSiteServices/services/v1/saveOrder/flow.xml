@@ -148,7 +148,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">Order</value>
+        <value name="field_name">Orders</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="wrapper_type">IData</value>
@@ -223,10 +223,10 @@
 </DATA>
 </MAPSET>
 
-<MAPCOPY FROM="/Order;4;0;FashionSiteDocs.docs.v1:Orders" TO="/value;3;0">
+<MAPCOPY FROM="/Orders;4;0;FashionSiteDocs.docs.v1:Orders" TO="/value;3;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/Order;4;0;FashionSiteDocs.docs.v1:Orders/orderId;1;0" TO="/key;3;0">
+<MAPCOPY FROM="/Orders;4;0;FashionSiteDocs.docs.v1:Orders/orderId;1;0" TO="/key;3;0">
 </MAPCOPY>
 </MAP>
 
@@ -308,7 +308,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">Order</value>
+        <value name="field_name">Orders</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="wrapper_type">IData</value>
@@ -476,7 +476,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">Order</value>
+        <value name="field_name">Orders</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="wrapper_type">IData</value>

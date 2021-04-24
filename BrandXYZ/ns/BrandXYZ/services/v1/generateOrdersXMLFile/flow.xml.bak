@@ -10,7 +10,7 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="FashionSiteServices.v1:getAllOrders" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="FashionSiteServices.services.v1:getAllOrders" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 
@@ -272,7 +272,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/AllOrders;4;0;FashionSiteDocs.docs.v1:Orders" TO="/document;2;0">
+<MAPCOPY FROM="/AllOrders;4;0;FashionSiteDocs.docs.v2:Orders" TO="/document;2;0">
 </MAPCOPY>
 </MAP>
 </INVOKE>
@@ -431,6 +431,26 @@
 
 <MAPCOPY FROM="/xmldata;1;0" TO="/data;1;0">
 </MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="true" GLOBALVARIABLES="false" FIELD="/fileName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">C:/Users/charith/BrandXYZ/%AllOrders/orderId%_%AllOrders/shippingDate%_%AllOrders/shippingAddross%.xml</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">fileName</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
 </MAP>
 </INVOKE>
 </LOOP>
